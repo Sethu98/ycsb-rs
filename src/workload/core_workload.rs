@@ -55,7 +55,7 @@ impl CoreWorkload {
     pub fn new(prop: &Properties) -> Self {
         let rng = SmallRng::from_entropy();
         let field_name_prefix = "field";
-        let field_count = 10;
+        let field_count = 1;//10;
         let mut field_names = vec![];
         for i in 0..field_count {
             field_names.push(format!("{}{}", field_name_prefix, i));
